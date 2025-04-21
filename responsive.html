@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            border: 2px solid royalblue;
+            /* max-width: 1140px; */
+            /* margin: auto; */
+        }
+        /* .img{
+            width: 100%;
+        } */
+         .image-container{
+            display: flex;
+         }
+        .image-container section{
+            display: grid;
+            gap: 10px;
+            width: 50%;
+            border: 1.5px solid gold;
+            padding: 10px;
+            border-radius: 10px;
+            column-gap: 10px;
+        }
+         .image-container img{
+            width: 100%;
+         }
+         /* .image-container-title{ */
+            display: flex;
+            /* justify-content:center; */
+            align-items: center;
+            height: 30%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1.5px solid maroon;
+         }
+         @media screen and (max-width:576px) {
+            .image-container{
+                flex-direction: column-reverse;
+            .image-container-title{
+                width: 50% ;
+                grid-template-columns: repeat(1,1fr);
+            }     
+            }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Website</h1>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Relative unit</li>
+            <li>body max width and horizontal center align</li>
+            <li>Image fluid</li>
+            <li>two column flex and use media query with flex direction column</li>
+            <li>multi column:grid layout</li>
+            <li>menu responsive:will need javascript</li>
+        </ol>
+    </header>
+    <main>
+        <div class="image-container">
+           <section><div><img src="images/food.jpg" alt="">
+            <div><h2>Food of life</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis voluptatibus, labore reprehenderit nemo a est. Nobis ex blanditiis voluptates esse quia, aperiam illo fugiat voluptas asperiores facilis deleniti omnis.</p></div>
+        </div></section>
+            <section><div><img src="images/lion.jpg" alt="">
+                <div>
+                    <h2>Lion is King</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum provident nam laudantium neque cupiditate cumque expedita, non dolorum ullam temporibus ut eligendi quas corrupti! Aut inventore quia consectetur minus neque.</p>
+                </div></div></section>
+        </div>
+        
+        
+    </main>
+</body>
+</html>
