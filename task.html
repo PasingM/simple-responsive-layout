@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 8 task</title>
+    <style>
+        .container{
+            display:flex;
+            
+
+        }
+        .container img{
+            width: 50%;
+
+        }
+        .container div{
+            background-color: azure;
+            /* border: 2px solid rebeccapurple; */
+            justify-content: center;
+            padding:10px;
+            font-size: large;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-rows: repeat(2,1fr);
+                flex-direction: column;
+                justify-content: center;
+                width:100%;
+                margin: auto;
+                }
+                .container-item{
+                    width: 100%;
+                    /* flex-direction:column-reverse; */
+                    /* grid-template-rows: repeat(2,1fr); */
+                }
+                .container img{
+                   /* align-items: center; */
+                   width: 100%;
+                }
+                .container-title{
+                    flex-direction: column-reverse;
+                }
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>World War 3</h1>
+    <section class="container">
+        <img src="images/ragner.jpg" alt="">
+        <div class="container-item">
+            <h2>Ragner Lothbrok</h2>
+            <p>Ragnar Lodbrok,according to legends was a Viking hero and a Swedish and Danish king.He is known from Old Norse poetry of the Viking Age, Icelandic sagas, and near-contemporary chronicles. According to traditional literature, Ragnar distinguished himself by conducting many raids against the British Isles and the Carolingian Empire during the 9th century. He also appears in Norse legends, and according to the legendary sagas Tale of Ragnar's Sons and a Saga about Certain Ancient Kings,Ragnar Lodbrok's father has been given as the legendary king of the Swedes, Sigurd Ring.</p>
+        </div>
+    </section>
+    <section class="container container-title"> 
+       <div class="container-item">
+         <h2>Jhon Snow</h2>
+        <p>Jon Snow is a fictional character in the A Song of Ice and Fire series of epic fantasy novels by American author George R. R. Martin, and its HBO television adaptation Game of Thrones, in which he is portrayed by Kit Harington. In the novels, he is a prominent point of view character. He is one of the most popular characters in the series, and The New York Times cites him as one of the author's finest creations.Jon is a main character in the TV series, and his storyline in the season 5 finale generated a strong reaction among viewers. Speculation about the character's parentage has also been a popular topic of discussion among fans of both the books and the TV series.</p></div>
+        <img src="images/snow.jpg" alt="">
+    </section>
+   
+</body>
+</html>
